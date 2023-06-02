@@ -62,7 +62,7 @@
             //id event
             $(".clickdownload").click(function() {
                 //element of img
-                domtoimage.toBlob(document.querySelector(".boximg")).then(function(blob) {
+                domtoimage.toBlob(document.getElementById("right")).then(function(blob) {
                     window.saveAs(blob,"Output.png");
                 });
             });

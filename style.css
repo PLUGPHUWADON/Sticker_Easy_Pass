@@ -112,76 +112,6 @@ main{
 #right{
     position: relative;
     width: 60%;
-    
-    .boximg{
-        position: relative;
-        margin: 0 auto;
-        width: 100%;
-        height: 100%;
-
-        >img{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
-    
-        >svg{
-            position: absolute;
-            z-index: 1;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%,-50%);
-            width: 800px;
-            height: 800px;
-        }
-    
-        .sun{
-            z-index: 3;
-        }
-
-        .boximgface{
-            position: relative;
-            position: absolute;
-            left: 50.9%;
-            top: 50.7%;
-            transform: translate(-50%,-50%);
-            z-index: 5;
-            width: 452px;
-            height: 452px;
-            overflow: hidden;
-            border-radius: 100%;
-
-            .smilesun{
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%,-50%);
-                z-index: 2;
-                border-radius: 100%;
-            }
-        }
-    
-        .textsun{
-            position: absolute;
-            z-index: 6;
-            bottom: 38px;
-            left: 50%;
-            transform: translate(-50%,0);
-            font-size: 90px;
-            color: #3872bc;
-            text-shadow: -0.25vw 0 #fff, 0 0.25vw #fff, 0.25vw 0 #fff, 0 -0.25vw #fff;
-        }
-
-        .addsmilesun{
-            display: none;
-        }
-
-        .addsizesmilesun{
-            width: 200px;
-            height: 200px;
-        }
-    }
 }
 
 .boximg{
@@ -237,7 +167,7 @@ main{
 .textsun{
     position: absolute;
     z-index: 6;
-    bottom: 2vh;
+    bottom: 38px;
     left: 50%;
     transform: translate(-50%,0);
     font-size: 90px;
@@ -269,46 +199,37 @@ main{
 
     #right{
         width: 100%;
-        height: 800px;
     }
 
     .boximg{
-        border: 1px solid red;
+        width: 800px;
+        height: 750px;
     }
 
     .textsun{
-        bottom: 80px;
+        bottom: 50px;
     }
 }
 
 @media screen and (max-width: 800px) {
     #right{
-        height: 700px;
+        width: 100vw;
     }
 
     .boximg{
         width: 100vw;
-        height: 100vh;
         transform: scale(0.8);
-    }
-
-    .textsun{
-        bottom: 38px;
     }
 }
 
 @media screen and (max-width: 660px) {
     #right{
-        height: 650px;
+        height: 550px;
     }
 
     .boximg{
+        margin-top: -100px;
         transform: scale(0.7);
-    }
-
-    .boximgface{
-        left: 51.3%;
-        width: 460px;
     }
 }
 
@@ -318,24 +239,29 @@ main{
     }
 
     .boximg{
-            margin-top: -100px;
-            transform: scale(0.6);
-        }
+        margin-top: -140px;
+        transform: scale(0.6);
+    }
 }
 
 @media screen and (max-width: 515px) {
+    #right{
+        height: 400px;
+    }
+
     .boximg{
+        margin-top: -180px;
         transform: scale(0.5);
     }
 }
 
 @media screen and (max-width: 440px) {
     #right{
-        height: 340px;
+        height: 320px;
     }
 
     .boximg{
-        margin-top: -190px;
+        margin-top: -220px;
         transform: scale(0.4);
     }
 }
