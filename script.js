@@ -12,6 +12,8 @@ let c_letter = document.querySelector(".c_letter");
 let inputtext = document.querySelector(".inputtext");
 let rotate = document.querySelector(".rotate");
 
+window.alert("ต้องการ download รูปเปิดที่ google chrome");
+
 let checkclicksmileface = 0;
 let checkfileimg = 0;
 clicksmile_face.addEventListener("click",() => {
